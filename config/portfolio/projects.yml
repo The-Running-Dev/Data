@@ -2,13 +2,14 @@
   subCategories:
     - name: Windows
       projects:
-        - title: Folder Compar
+        - title: FolderCompare
           link: 
           lastModified: 
-          summary: A simple Windows forms desktop application to compare two directories, using CRC, and merge their contents.
+          summary: A simple Windows desktop application to compare two directories, using CRC, and merge their contents. Supports filters by filename and wildcards.
           tags:
             - C#
             - .NET
+            - WinForms
             - Desktop
             - Windows
             - Utility
@@ -24,7 +25,7 @@
           tags:
             - Angular
             - TypeScript
-            - Restaurant
+            - Bar
             - Menu
             - Discord
             - Theming
