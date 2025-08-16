@@ -1,66 +1,3 @@
-/**
- * # Pre-Build Script for Docusaurus Site
- *
- * This script performs essential setup tasks before the main Docusaurus build process.
- * It handles configuration conversion, theme management, navigation generation, and
- * markdown file processing to prepare the site for deployment.
- *
- * ## Core Functionality:
- *
- * ### 1. Configuration Management
- * - Converts YAML configuration files to JSON format for runtime consumption
- * - Creates a TypeScript index file for seamless data imports
- * - Manages global configuration loading and validation
- *
- * ### 2. Theme System
- * - Scans CSS theme files and extracts metadata from header comments
- * - Generates theme configuration with fallbacks for missing metadata
- * - Creates a centralized theme registry for the theme switcher component
- *
- * ### 3. Navigation Generation
- * - Auto-generates navigation bar links from markdown pages
- * - Creates demo page links from TypeScript component files
- * - Handles label formatting and URL generation
- *
- * ### 4. Content Processing
- * - Copies markdown files from project root to pages directory
- * - Handles README.md -> index.md conversion for homepage
- * - Supports conditional overwriting of existing files
- *
- * ## Directory Structure:
- * - `/config/` - Source YAML configuration files
- * - `/data/` - Generated JSON data files and TypeScript index
- * - `/static/themes/` - CSS theme files with metadata headers
- * - `/src/pages/` - Destination for copied markdown files
- * - `/src/pages/demos/` - TypeScript demo components
- *
- * ## Usage:
- * - Run directly: `tsx pre-build.ts`
- * - Import as module: `import { PreBuild } from './pre-build'`
- * - Package.json scripts: `npm run prebuild`
- *
- * ## Dependencies:
- * - js-yaml: YAML parsing and conversion
- * - Node.js fs/path: File system operations
- * - Custom entities: GlobalConfig type definitions
- *
- * ## Architecture Notes:
- * - Comprehensive error handling with fallback systems
- * - Standardized logging throughout all operations
- * - Graceful handling of missing directories and files
- * - TypeScript-compatible data export generation
- * - Configurable processing with safe defaults
- *
- * ## Future Improvements:
- * - Convert to async/await pattern for better performance
- * - Add configuration schema validation with joi or zod
- * - Add comprehensive unit tests
- * - Consider file watching for development mode
- *
- * @author Template Build System
- * @version 1.0.0
- */
-
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
@@ -68,11 +5,10 @@ import * as yaml from 'js-yaml';
 const CONFIG_DIR = path.join(__dirname, './config');
 const DATA_DIR = path.join(__dirname, './artifacts');
 
-export class PreBuild {
+export class Build {
   constructor() {
     this.setupConfig();
   }
-
 
   private setupConfig(): void {
     try {
@@ -90,7 +26,6 @@ export class PreBuild {
   }
 
   private processYamlToJson(): void {
-    // Ensure the data directory exists
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
     }
@@ -161,5 +96,5 @@ export class PreBuild {
 
 // Only run if invoked directly, not imported
 if (process.argv[1] && process.argv[1].endsWith('build.ts')) {
-  new PreBuild().process();
+  new Build().process();
 }
