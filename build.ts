@@ -66,7 +66,7 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 
 const CONFIG_DIR = path.join(__dirname, './config');
-const DATA_DIR = path.join(__dirname, './data');
+const DATA_DIR = path.join(__dirname, './artifacts');
 
 export class PreBuild {
   constructor() {

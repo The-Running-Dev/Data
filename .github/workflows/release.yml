@@ -32,7 +32,7 @@ jobs:
   # Build Job: Compiles Docusaurus documentation into static assets
   # Uses custom build agent with pre-installed Node.js and build tools
   build:
-    name: Build Documentation
+    name: Build Project
     runs-on: ubuntu-latest
     
     # Use custom build agent container for consistent build environment
