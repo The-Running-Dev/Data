@@ -1,3 +1,18 @@
+- category: Desktop
+  subCategories:
+    - name: Windows
+      projects:
+        - title: Folder Compar
+          link: 
+          lastModified: 
+          summary: A simple Windows forms desktop application to compare two directories, using CRC, and merge their contents.
+          tags:
+            - C#
+            - .NET
+            - Desktop
+            - Windows
+            - Utility
+
 - category: Frontend
   subCategories:
     - name: Angular
