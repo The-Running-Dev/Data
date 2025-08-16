@@ -2,10 +2,10 @@
   subCategories:
     - name: Windows
       projects:
-        - title: FolderCompare
+        - title: QuickSync
           link: 
           lastModified: 
-          summary: A simple Windows desktop application to compare two directories, using CRC, and merge their contents. Supports filters by filename and wildcards.
+          summary: Windows desktop utility to compare and synchronize two folders. Uses CRC32 checksums to detect file changes, supports recursive comparison, and allows ignoring specific directories or file extensions. Results are shown in a WinForms UI, with options to save/load sync profiles and automate post-sync actions.
           tags:
             - C#
             - .NET
