@@ -1,0 +1,102 @@
+name: Release
+
+# ====================================================================
+# WORKFLOW TRIGGERS
+# ====================================================================
+on:
+  # Manual trigger for emergency releases or testing
+  # Usage: Go to Actions tab > Release workflow > Run workflow
+  workflow_dispatch:
+  
+  # Automatic trigger on main branch push (production deployment)
+  push:
+    branches:
+      - main
+    # Skip deployment if only CI workflow files changed
+    paths-ignore:
+      - '.github/workflows/ci.yml'
+
+# ====================================================================
+# SECURITY PERMISSIONS
+# ====================================================================
+# Minimal required permissions following principle of least privilege
+permissions:
+  contents: read   # Required to read repository content
+  pages: write     # Required to deploy content to GitHub Pages
+  id-token: write  # Required to verify deployment authenticity
+
+# ====================================================================
+# JOBS CONFIGURATION
+# ====================================================================
+jobs:
+  # Build Job: Compiles Docusaurus documentation into static assets
+  # Uses custom build agent with pre-installed Node.js and build tools
+  build:
+    name: Build Documentation
+    runs-on: ubuntu-latest
+    
+    # Use custom build agent container for consistent build environment
+    # This container includes Node.js, pnpm, and documentation build tools
+    container:
+      image: ghcr.io/the-running-dev/build-agent:latest
+  
+    steps:
+      # ================================================================
+      # STEP 1: REPOSITORY CHECKOUT
+      # ================================================================
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch complete git history for proper README processing
+          fetch-depth: 0
+
+      # ================================================================
+      # STEP 2: INSTALL DEPENDENCIES
+      # ================================================================
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      # ================================================================
+      # STEP 3: BUILD PROJECT
+      # ================================================================
+      - name: Build Project
+        run: pnpm run build:prod
+        env:
+          # Ensure proper environment for build
+          NODE_ENV: production
+
+      # ================================================================
+      # STEP 4: UPLOAD PAGES ARTIFACT
+      # ================================================================
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: artifacts/
+
+  # Deploy Job: Deploys built documentation to GitHub Pages
+  # This job depends on successful completion of the Build job
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build  # Wait for Build job to complete successfully
+
+    # Enhanced permissions specifically for GitHub Pages deployment
+    # These permissions are more restrictive than the workflow-level permissions
+    permissions:
+      pages: write      # Required to deploy content to GitHub Pages
+      id-token: write   # Required to verify deployment authenticity and source
+
+    # Configure deployment environment for GitHub Pages
+    # This provides deployment URL and environment tracking
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      # ============================================================
+      # STEP 1: DEPLOY TO GITHUB PAGES
+      # ============================================================
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

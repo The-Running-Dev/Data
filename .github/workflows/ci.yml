@@ -1,0 +1,87 @@
+name: CI
+
+# ====================================================================
+# WORKFLOW TRIGGERS
+# ====================================================================
+on:
+  # Manual trigger for testing or debugging CI process
+  # Usage: Go to Actions tab > CI workflow > Run workflow
+  workflow_dispatch:
+  
+  # Trigger on all pull request events (opened, synchronized, reopened, etc.)
+  pull_request:
+    # Skip CI if only workflow files changed
+    paths-ignore:
+      - '.github/**'
+
+# ====================================================================
+# SECURITY PERMISSIONS
+# ====================================================================
+# Minimal required permissions following principle of least privilege
+permissions:
+  contents: read  # Read repository contents
+
+# ====================================================================
+# CONCURRENCY CONTROL
+# ====================================================================
+# Prevent multiple CI runs from executing simultaneously to avoid conflicts
+# and reduce resource usage. Cancel in-progress runs when new commits are pushed.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# ====================================================================
+# JOBS CONFIGURATION
+# ====================================================================
+jobs:
+  build-and-lint:
+    name: Build and Lint
+    runs-on: ubuntu-latest
+
+    # Use custom build agent container for consistent build environment
+    # This container includes Node.js, pnpm, and documentation build tools
+    # Image: ghcr.io/the-running-dev/build-agent:latest
+    container:
+      image: ghcr.io/the-running-dev/build-agent:latest
+    
+    # ================================================================
+    # EXECUTION CONDITIONS
+    # ================================================================
+    # Explicit condition check to ensure workflow runs only when intended
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref != 'refs/heads/main')
+
+    steps:
+      # ================================================================
+      # STEP 0: DUPLICATE RUN PREVENTION
+      # ================================================================
+      # Ensures only one CI run completes for each commit, cancelling duplicates
+      # This is a safety net in case multiple triggers fire simultaneously
+      - name: Skip Duplicate Actions
+        uses: fkirc/skip-duplicate-actions@v5
+        with:
+          cancel_others: true
+          skip_after_successful_duplicate: true
+
+      # ================================================================
+      # STEP 1: REPOSITORY CHECKOUT
+      # ================================================================
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch complete git history for proper README processing
+          fetch-depth: 0
+
+      # ================================================================
+      # STEP 2: INSTALL DEPENDENCIES
+      # ================================================================
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      # ================================================================
+      # STEP 3: BUILD PROJECT
+      # ================================================================
+      - name: Build Project
+        run: pnpm run build:prod
+        env:
+          # Ensure proper environment for build
+          NODE_ENV: production

@@ -1,0 +1,21 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/The-Running-Dev/Data#readme",
+  "bugs": {
+    "url": "https://github.com/The-Running-Dev/Data/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Running-Dev/Data.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "build:prod": "tsx build.ts"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
