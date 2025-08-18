@@ -2,15 +2,16 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 
+const glob = require('glob');
 const CONFIG_DIR = path.join(__dirname, './config');
 const DATA_DIR = path.join(__dirname, './artifacts');
 
 export class Build {
   constructor() {
-    this.setupConfig();
+    this.setup();
   }
 
-  private setupConfig(): void {
+  private setup(): void {
     try {
       // Ensure data directory exists
       if (!fs.existsSync(DATA_DIR)) {
@@ -42,7 +43,9 @@ export class Build {
       if (!fs.existsSync(destDir)) {
         fs.mkdirSync(destDir, { recursive: true });
       }
+
       const entries = fs.readdirSync(srcDir, { withFileTypes: true });
+      
       entries.forEach((entry) => {
         const srcPath = path.join(srcDir, entry.name);
         const destPath = path.join(destDir, entry.name);
@@ -76,20 +79,27 @@ export class Build {
     );
   }
 
+  private postBuild() {
+    const { execSync } = require('child_process');
+
+    glob.sync('**/post-build.ts').forEach(file => {
+      execSync(`npx tsx ${file}`, { stdio: 'inherit' });
+    });
+  }
+
   public process(): void {
     try {
       console.log('[INFO] Starting Build Process...');
 
       this.processYamlToJson();
 
+      this.postBuild();
+
       console.log('[INFO] Build Process Completed Successfully');
     } catch (error) {
       console.error(
         `[ERROR] Build Process Failed: ${error instanceof Error ? error.message : String(error)}`
       );
-
-      // Don't throw the error, just log it so the build can continue
-      console.warn('[WARN] Continuing with Build Despite Pre-Build Errors');
     }
   }
 }
