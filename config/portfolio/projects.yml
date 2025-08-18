@@ -1,3 +1,19 @@
+- category: Desktop
+  subCategories:
+    - name: Windows
+      projects:
+        - title: QuickSync
+          link: 
+          lastModified: 
+          summary: Windows desktop utility to compare and synchronize two folders. Uses CRC32 checksums to detect file changes, supports recursive comparison, and allows ignoring specific directories or file extensions. Results are shown in a WinForms UI, with options to save/load sync profiles and automate post-sync actions.
+          tags:
+            - C#
+            - .NET
+            - WinForms
+            - Desktop
+            - Windows
+            - Utility
+
 - category: Frontend
   subCategories:
     - name: Angular
@@ -9,7 +25,7 @@
           tags:
             - Angular
             - TypeScript
-            - Restaurant
+            - Bar
             - Menu
             - Discord
             - Theming
