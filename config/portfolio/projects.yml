@@ -3,8 +3,8 @@
     - name: Windows
       projects:
         - title: QuickSync
-          link: 
-          lastModified: 
+          link: https://github.com/The-Running-Dev/QuickSync
+          lastModified: 2025-08-24T00:00:00Z
           summary: Windows desktop utility to compare and synchronize two folders. Uses CRC32 checksums to detect file changes, supports recursive comparison, and allows ignoring specific directories or file extensions. Results are shown in a WinForms UI, with options to save/load sync profiles and automate post-sync actions.
           tags:
             - C#
@@ -13,6 +13,8 @@
             - Desktop
             - Windows
             - Utility
+            - File Management
+            - CRC32
 
 - category: Frontend
   subCategories:
@@ -25,6 +27,7 @@
           tags:
             - Angular
             - TypeScript
+            - Frontend
             - Bar
             - Menu
             - Discord
@@ -41,7 +44,9 @@
             - Testing
             - Business
             - ASP.NET
+            - WebForms
             - Production
+            - Enterprise
 
         - title: NetAssure Client
           link: https://github.com/The-Running-Dev/Demo-NetAssure/tree/master/web-client/src
@@ -50,13 +55,18 @@
           tags:
             - Angular
             - TypeScript
+            - Frontend
             - Docker
+            - Docker Compose
             - TeamCity
             - Zabbix
             - Salesforce
             - Network
             - Hardware
             - CentOS
+            - Linux
+            - Infrastructure
+            - DevOps
 
         - title: PatientViewer.NG
           link: https://github.com/The-Running-Dev/Demo-PatientVIewer.NG
@@ -65,6 +75,7 @@
           tags:
             - Angular
             - TypeScript
+            - Frontend
             - Healthcare
             - Demo
             - Skills Showcase
@@ -79,7 +90,9 @@
             - Business
             - Equipment
             - ASP.NET
+            - WebForms
             - Production
+            - Enterprise
 
         - title: Rock Paper Scissors
           link: https://github.com/The-Running-Dev/Demo-RockPaperScissors
@@ -88,6 +101,7 @@
           tags:
             - Angular
             - TypeScript
+            - Frontend
             - Game
             - Demo
             - Interactive
@@ -101,10 +115,13 @@
           tags:
             - React
             - TypeScript
+            - Frontend
             - Docusaurus
             - Portfolio
             - GitHub Pages
-        
+            - SSG
+            - Markdown
+
         - title: Docusaurus Template
           link: https://github.com/The-Running-Dev/Docusaurus-Template
           lastModified: 2025-08-16T00:00:00Z
@@ -113,195 +130,229 @@
             - React
             - Docusaurus
             - TypeScript
+            - Frontend
             - Documentation
             - Theming
             - GitHub Integration
             - Docker
             - Template
+            - SSG
+            - Markdown
+            - Automation
+            - Build Tools
 
 - category: Backend
   subCategories:
-    - name: .NET
-      projects:
-        - title: Business Intelligence
-          link: https://github.com/The-Running-Dev/Contec-BusinessIntelligence
-          lastModified: 2019-04-16T23:52:00Z
-          summary: I spent 6 months evaluating BI tools to help the company analyse the vast amount of data they collected. This project is the web interface I created to expose the data charted through PowerBI.
-          tags:
-            - .NET
-            - C#
-            - Business Intelligence
-            - PowerBI
-            - Data Analysis
-            - Web Interface
+  - name: '.NET'
+    projects:
+      - title: Business Intelligence
+        link: https://github.com/The-Running-Dev/Contec-BusinessIntelligence
+        lastModified: 2019-04-16T23:52:00Z
+        summary: I spent 6 months evaluating BI tools to help the company analyse the vast amount of data they collected. This project is the web interface I created to expose the data charted through PowerBI.
+        tags:
+          - .NET
+          - C#
+          - ASP.NET
+          - Business Intelligence
+          - Power BI
+          - Data Analysis
+          - Web Interface
+          - Analytics
 
-        - title: Code Generator
-          link: https://github.com/The-Running-Dev/Tools-CodeGenerator
-          lastModified: 2016-05-06T01:40:00Z
-          summary: 'This project uses Razor as the template engine, and given source templates, and access to the source database, generates the needed classes to implement the desired pattern. Context: I introduced a team I worked with to Dapper (a micro ORM), and over time I saw a need to generate a lot of classes based on the repository pattern I implemented in Dapper.'
-          tags:
-            - .NET
-            - C#
-            - Razor
-            - Code Generation
-            - Dapper
-            - ORM
-            - Repository Pattern
-            - Templates
+      - title: Code Generator
+        link: https://github.com/The-Running-Dev/Tools-CodeGenerator
+        lastModified: 2016-05-06T01:40:00Z
+        summary: 'This project uses Razor as the template engine, and given source templates, and access to the source database, generates the needed classes to implement the desired pattern. Context: I introduced a team I worked with to Dapper (a micro ORM), and over time I saw a need to generate a lot of classes based on the repository pattern I implemented in Dapper.'
+        tags:
+          - .NET
+          - C#
+          - Razor
+          - Code Generation
+          - Dapper
+          - ORM
+          - Repository Pattern
+          - Templates
+          - Automation
+          - Build Tools
 
-        - title: Image Event Processor
-          link: https://github.com/The-Running-Dev/Demo-ImageEventProcessor
-          lastModified: 2025-01-23T14:23:00Z
-          summary: A .NET WebAPI hosted in AWS Lambda, with an Angular UI, as a demo for processing images.
-          tags:
-            - .NET
-            - C#
-            - AWS Lambda
-            - Angular
-            - WebAPI
-            - Image Processing
-            - Serverless
+      - title: Image Event Processor
+        link: https://github.com/The-Running-Dev/Demo-ImageEventProcessor
+        lastModified: 2025-01-23T14:23:00Z
+        summary: A .NET WebAPI hosted in AWS Lambda, with an Angular UI, as a demo for processing images.
+        tags:
+          - .NET
+          - C#
+          - AWS Lambda
+          - Angular
+          - WebAPI
+          - Image Processing
+          - Serverless
+          - Cloud
+          - AWS
 
-        - title: Menu Creator
-          link: https://github.com/The-Running-Dev/Demo-MenuCreator
-          lastModified: 2019-07-03T18:23:00Z
-          summary: A simple menu creator on top of .NET Core 2.2. This application is a coding exercise I was given and expected to complete in 60 minutes. The README in the repository documents the structure and implementation.
-          tags:
-            - .NET Core
-            - C#
-            - Coding Exercise
-            - Menu
-            - Demo
-            - Timed Challenge
+      - title: Menu Creator
+        link: https://github.com/The-Running-Dev/Demo-MenuCreator
+        lastModified: 2019-07-03T18:23:00Z
+        summary: A simple menu creator on top of .NET Core 2.2. This application is a coding exercise I was given and expected to complete in 60 minutes. The README in the repository documents the structure and implementation.
+        tags:
+          - .NET Core
+          - C#
+          - ASP.NET Core
+          - API
+          - Coding Exercise
+          - Menu
+          - Demo
+          - Timed Challenge
 
-        - title: OctopusDeploy-CruiseControlTray
-          link: https://github.com/The-Running-Dev/OctopusDeploy-CruiseControlTray
-          lastModified: 2016-08-01T00:19:00Z
-          summary: A tool to translate OctopusDeploy build status into the XML format CruiseControlTray understands, enabling audio and video notifications of deployment status.
-          tags:
-            - .NET
-            - C#
-            - OctopusDeploy
-            - CI/CD
-            - Build Status
-            - XML
-            - Notifications
-            - Integration
+      - title: OctopusDeploy-CruiseControlTray
+        link: https://github.com/The-Running-Dev/OctopusDeploy-CruiseControlTray
+        lastModified: 2016-08-01T00:19:00Z
+        summary: A tool to translate OctopusDeploy build status into the XML format CruiseControlTray understands, enabling audio and video notifications of deployment status.
+        tags:
+          - .NET
+          - C#
+          - OctopusDeploy
+          - CI/CD
+          - Build Status
+          - XML
+          - Notifications
+          - Integration
+          - DevOps
+          - Build Tools
+          - Automation
 
-        - title: PatientViewer.NET
-          link: https://github.com/The-Running-Dev/Demo-PatientVIewer.NET
-          lastModified: 2019-11-30T17:44:00Z
-          summary: A project to showcase my .NET skills. It's a simple ASP.NET MVC/WebAPI application that displays a list of patients. The README in the repository documents the structure and implementation.
-          tags:
-            - .NET
-            - C#
-            - ASP.NET MVC
-            - WebAPI
-            - Healthcare
-            - Demo
-            - Skills Showcase
+      - title: PatientViewer.NET
+        link: https://github.com/The-Running-Dev/Demo-PatientViewer.NET
+        lastModified: 2019-11-30T17:44:00Z
+        summary: A project to showcase my .NET skills. It's a simple ASP.NET MVC/WebAPI application that displays a list of patients. The README in the repository documents the structure and implementation.
+        tags:
+          - .NET
+          - C#
+          - ASP.NET
+          - ASP.NET MVC
+          - WebAPI
+          - API
+          - Healthcare
+          - Demo
+          - Skills Showcase
 
-        - title: Refactoring Exercise
-          link: https://github.com/The-Running-Dev/Demo-RefactoringExercise
-          lastModified: 2019-07-03T18:30:00Z
-          summary: A demo application I was asked to refactor simulating what I would do if I had to review a junior developer’s code. The README in the repository has more details.
-          tags:
-            - .NET
-            - C#
-            - Refactoring
-            - Code Review
-            - Demo
+      - title: Refactoring Exercise
+        link: https://github.com/The-Running-Dev/Demo-RefactoringExercise
+        lastModified: 2019-07-03T18:30:00Z
+        summary: A demo application I was asked to refactor simulating what I would do if I had to review a junior developer’s code. The README in the repository has more details.
+        tags:
+          - .NET
+          - C#
+          - Refactoring
+          - Code Review
+          - Demo
+          - Code Quality
 
-        - title: SnapCrackle
-          link: https://github.com/The-Running-Dev/Demo-SnapCrackle
-          lastModified: 2015-12-21T18:37:00Z
-          summary: Who hasn’t done a Fizz/Buzz coding exercise? Here is mine I did in real time during a job interview.
-          tags:
-            - .NET
-            - C#
-            - Algorithms
-            - Coding Exercise
+      - title: SnapCrackle
+        link: https://github.com/The-Running-Dev/Demo-SnapCrackle
+        lastModified: 2015-12-21T18:37:00Z
+        summary: Who hasn’t done a Fizz/Buzz coding exercise? Here is mine I did in real time during a job interview.
+        tags:
+          - .NET
+          - C#
+          - Algorithms
+          - Coding Exercise
+          - Interview
 
-        - title: Starter
-          link: https://github.com/The-Running-Dev/Starter.Stage7
-          lastModified: 2019-12-30T15:03:00Z
-          summary: A project containing 'Starter Tasks', a project I worked on to get familiar with the technology stack of an employer.
-          tags:
-            - .NET
-            - C#
-            - Starter Project
-            - Learning
-            - SQL Server
+      - title: Starter
+        link: https://github.com/The-Running-Dev/Starter.Stage7
+        lastModified: 2019-12-30T15:03:00Z
+        summary: A project containing 'Starter Tasks', a project I worked on to get familiar with the technology stack of an employer.
+        tags:
+          - .NET
+          - C#
+          - Starter Project
+          - Learning
+          - SQL Server
+          - Database
 
-        - title: Thum.io
-          link: https://github.com/The-Running-Dev/Thum.io
-          lastModified: 2020-12-30T22:24:00Z
-          summary: A package and command line client to interact with the Thum.io screenshot API service.
-          tags:
-            - NodeJS
-            - API
-            - CLI
-            - Screenshot
-            - Web Tools
+      - title: Thum.io
+        link: https://github.com/The-Running-Dev/Thum.io
+        lastModified: 2020-12-30T22:24:00Z
+        summary: A package and command line client to interact with the Thum.io screenshot API service.
+        tags:
+          - Node.JS
+          - TypeScript
+          - API
+          - CLI
+          - Screenshot
+          - Web Tools
+          - Package
 
-    - name: NodeJS
-      projects:
-        - title: BarStrad-Bot
-          link: https://github.com/The-Running-Dev/BarStrad-Bot
-          lastModified:
-          summary: A TypeScript-based Discord bot for restaurants and bars, featuring multilingual support, order management, and containerized deployment.
-          tags:
-            - NodeJS
-            - TypeScript
-            - Discord.js
-            - Restaurant
-            - Order Management
-            - Docker
+  - name: Node.JS
+    projects:
+      - title: BarStrad-Bot
+        link: https://github.com/The-Running-Dev/BarStrad-Bot
+        lastModified: 
+        summary: A TypeScript-based Discord bot for restaurants and bars, featuring multilingual support, order management, and containerized deployment.
+        tags:
+          - Node.JS
+          - TypeScript
+          - Discord.js
+          - Discord
+          - Bot
+          - Restaurant
+          - Order Management
+          - Docker
 
-        - title: Docker-Webhooks
-          link: https://github.com/The-Running-Dev/Docker-Webhooks
-          lastModified: 2025-04-08T08:34:00Z
-          summary: A NodeJS API with Express to manage local docker containers. I created this to expose through Cloudflared, so I can pull and update my local running Docker images based on posting a Webhook from a GitHub workflow. Still in progress.
-          tags:
-            - NodeJS
-            - Express
-            - Docker
-            - Cloudflare
-            - Webhooks
+      - title: Docker-Webhooks
+        link: https://github.com/The-Running-Dev/Docker-Webhooks
+        lastModified: 2025-04-08T08:34:00Z
+        summary: A Node.JS API with Express to manage local docker containers. I created this to expose through Cloudflared, so I can pull and update my local running Docker images based on posting a Webhook from a GitHub workflow. Still in progress.
+        tags:
+          - Node.JS
+          - TypeScript
+          - Express
+          - API
+          - Docker
+          - Cloudflare
+          - Webhooks
 
-        - title: NetAssure API
-          link: https://github.com/The-Running-Dev/Demo-NetAssure/tree/master/web-client/server
-          lastModified: 2019-04-16T21:23:00Z
-          summary: A project for a network hardware company that aims to manage and expose device data hosted in Zabbix. This is the web API, written on top of NodeJS with Express and hosted on CentOS. This project used Docker and Docker Compose for managing the app code and infrastructure, and TeamCity as the build server, on top of CentOS.
-          tags:
-            - NodeJS
-            - Express
-            - Docker
-            - TeamCity
-            - Zabbix
-            - CentOS
-            - Networking
+      - title: NetAssure API
+        link: https://github.com/The-Running-Dev/Demo-NetAssure/tree/master/web-client/server
+        lastModified: 2019-04-16T21:23:00Z
+        summary: A project for a network hardware company that aims to manage and expose device data hosted in Zabbix. This is the web API, written on top of Node.JS with Express and hosted on CentOS. This project used Docker and Docker Compose for managing the app code and infrastructure, and TeamCity as the build server, on top of CentOS.
+        tags:
+          - Node.JS
+          - Express
+          - API
+          - Docker
+          - TeamCity
+          - Zabbix
+          - CentOS
+          - Linux
+          - Networking
 
-        - title: NetAssure Notification Service
-          link: https://github.com/The-Running-Dev/Demo-NetAssure/tree/master/NotificationService
-          lastModified: 2019-04-16T21:23:00Z
-          summary: A project that triggers sending notifications to an user when certain conditions are met. Made to be hosted as a micro-service on AWS Lambda.
-          tags:
-            - NodeJS
-            - AWS Lambda
-            - Microservices
-            - Notifications
+      - title: NetAssure Notification Service
+        link: https://github.com/The-Running-Dev/Demo-NetAssure/tree/master/NotificationService
+        lastModified: 2019-04-16T21:23:00Z
+        summary: A project that triggers sending notifications to an user when certain conditions are met. Made to be hosted as a micro-service on AWS Lambda.
+        tags:
+          - Node.JS
+          - AWS Lambda
+          - Serverless
+          - AWS
+          - Microservices
+          - Notifications
 
-        - title: Shopping Service
-          link: https://github.com/The-Running-Dev/Demo-ShoppingService
-          lastModified: 2017-07-19T00:07:00Z
-          summary: A demo application as a micro service I created as a take home project for a company I interviewed with. It takes the user’s ZIP code, calls an external API to get the weather for that service, and then suggest the appropriate clothing to buy. It comes with a simple Angular UI to be able to test the application locally without constructing the initial API call yourself. The UI demo no longer functions as the underlying weather API has changed.
-          tags:
-            - NodeJS
-            - Angular
-            - REST API
-            - Weather
-            - Demo
+      - title: Shopping Service
+        link: https://github.com/The-Running-Dev/Demo-ShoppingService
+        lastModified: 2017-07-19T00:07:00Z
+        summary: A demo application as a micro service I created as a take home project for a company I interviewed with. It takes the user’s ZIP code, calls an external API to get the weather for that service, and then suggest the appropriate clothing to buy. It comes with a simple Angular UI to be able to test the application locally without constructing the initial API call yourself. The UI demo no longer functions as the underlying weather API has changed.
+        tags:
+          - Node.JS
+          - Angular
+          - REST API
+          - API
+          - Microservices
+          - External API
+          - Weather
+          - Demo
 
 - category: Automation
   subCategories:
@@ -315,6 +366,7 @@
             - PowerShell
             - iCloud
             - Automation
+            - File Management
 
         - title: PowerShell-FileButler
           link: https://github.com/The-Running-Dev/PowerShell-FileButler
@@ -324,6 +376,7 @@
             - PowerShell
             - File Management
             - Automation
+            - File Organization
 
         - title: PowerShell-Helpers
           link: https://github.com/The-Running-Dev/PowerShell-Helpers
@@ -333,6 +386,7 @@
             - PowerShell
             - Utilities
             - Automation
+            - Helpers
 
         - title: BoxStarter
           link: https://github.com/The-Running-Dev/BoxStarter
@@ -343,35 +397,42 @@
             - Chocolatey
             - Windows
             - Automation
+            - Package Management
 
     - name: GitHub Actions
       projects:
         - title: Sidequest EasyInstaller
           link: https://github.com/The-Running-Dev/Winget-Updates/actions/workflows/sidequest.easyinstaller.yml
-          lastModified:
+          lastModified: ''
           summary: GitHub Actions workflow for automating updates of SideQuest Easy Installer.
           tags:
             - GitHub Actions
             - CI/CD
             - Automation
+            - YAML
+            - DevOps
 
         - title: XYplorer
           link: https://github.com/The-Running-Dev/Winget-Updates/actions/workflows/xyplorer.yml
-          lastModified:
+          lastModified: 
           summary: GitHub Actions workflow for automating updates of XYplorer.
           tags:
             - GitHub Actions
             - CI/CD
             - Automation
+            - YAML
+            - DevOps
 
         - title: XYplorer Portable
           link: https://github.com/The-Running-Dev/Winget-Updates/actions/workflows/xyplorer.portable.yml
-          lastModified:
+          lastModified: 
           summary: GitHub Actions workflow for automating updates of XYplorer Portable.
           tags:
             - GitHub Actions
             - CI/CD
             - Automation
+            - YAML
+            - DevOps
 
 - category: Open Source
   subCategories:
@@ -379,51 +440,56 @@
       projects:
         - title: Chocolatey Packages
           link: https://github.com/chocolatey-community/chocolatey-packages/pulls?q=is%3Apr+author%3AThe-Running-Dev
-          lastModified:
-          summary: The core repository for Chocolatey packages. I contributed a dozen packages to this repository (like Spotify, JetBrains WebStorm and DataGrip, etc.).
+          lastModified: 
+          summary: 'The core repository for Chocolatey packages. I contributed a dozen packages to this repository (like Spotify, JetBrains WebStorm and DataGrip, etc.).'
           tags:
             - Chocolatey
             - Windows
+            - Package Management
             - Packages
             - Open Source
 
         - title: WinGet-Packages
           link: https://github.com/microsoft/winget-pkgs/pulls?q=is%3Apr+author%3AThe-Running-Dev
-          lastModified:
+          lastModified: 
           summary: Contributions to the Windows package manager community repository. This repository contains the manifest files for the Windows Package Manager default source.
           tags:
             - WinGet
             - Windows
+            - Package Management
             - Packages
             - Open Source
 
         - title: SideQuest Easy Installer
           link: https://github.com/microsoft/winget-pkgs/pull/126347
-          lastModified:
+          lastModified: 
           summary: WinGet package for the SideQuest Easy Installer.
           tags:
             - WinGet
             - Windows
+            - Package Management
             - Packages
             - Open Source
 
         - title: XYplorer
-          link: https://github.com/microsoft/winget-pkgs/pull/126351
-          lastModified:
+          link: 'https://github.com/microsoft/winget-pkgs/pull/126351'
+          lastModified: 
           summary: WinGet package for the XYPlorer file manager.
           tags:
             - WinGet
             - Windows
+            - Package Management
             - Packages
             - Open Source
 
         - title: XYplorer Portable
           link: https://github.com/microsoft/winget-pkgs/pull/126622
-          lastModified:
+          lastModified: 
           summary: WinGet package for the XYPlorer file manager, portable version.
           tags:
             - WinGet
             - Windows
+            - Package Management
             - Packages
             - Open Source
 
@@ -436,15 +502,35 @@
             - Database
             - Versioning
             - Open Source
+            - Migration
 
         - title: Castopod
           link: https://github.com
-          lastModified:
+          lastModified: 
           summary: Open source project I contributed to.
           tags:
+            - PHP
             - Podcast
             - CMS
             - Open Source
+
+- category: Business Intelligence
+  subCategories:
+    - name: Business Intelligence
+      projects:
+        - title: Business Intelligence Web Interface
+          link: https://github.com/The-Running-Dev/Contec-BusinessIntelligence
+          lastModified: 2019-04-16T23:52:00Z
+          summary: Web interface to expose data charted through PowerBI. Created during 6-month evaluation of BI tools to help analyze vast amounts of collected data.
+          tags:
+            - .NET
+            - C#
+            - ASP.NET
+            - Business Intelligence
+            - Power BI
+            - Data Analysis
+            - Web Interface
+            - Analytics
 
 - category: Infrastructure
   subCategories:
@@ -458,9 +544,12 @@
             - Azure
             - Azure DevOps
             - Infrastructure as Code
+            - IaC
             - CI/CD
             - ARM Templates
             - YAML
+            - DevOps
+            - Cloud
 
     - name: Docker
       projects:
@@ -474,6 +563,8 @@
             - dnscrypt-proxy
             - Networking
             - Home Lab
+            - Security
+            - Privacy
 
         - title: Docker-BuildAgent
           link: https://github.com/The-Running-Dev/Docker-BuildAgent
@@ -482,10 +573,12 @@
           tags:
             - Docker
             - CI/CD
-            - NodeJS
+            - Node.JS
             - Angular
             - TypeScript
             - PowerShell
+            - Build Tools
+            - DevOps
 
         - title: Docker-Watchdog
           link: https://github.com/The-Running-Dev/Docker-Watchdog
@@ -497,18 +590,23 @@
             - Monitoring
             - REST API
             - Self-Hosting
+            - DevOps
+            - Container Management
 
     - name: Other
       projects:
         - title: TeamCity, AWS Lambda
-          link:
-          lastModified:
+          link: 
+          lastModified: 
           summary: Used in NetAssure / Image Processor projects.
           tags:
             - TeamCity
             - AWS Lambda
             - CI/CD
             - Cloud
+            - AWS
+            - Serverless
+            - DevOps
 
         - title: Linux/Bash Setup Scripts
           link: https://github.com/The-Running-Dev/Setup-Ubuntu
@@ -516,6 +614,8 @@
           summary: A set of Bash scripts that install and configure a new Ubuntu installation.
           tags:
             - Linux
+            - Ubuntu
             - Bash
             - Shell Scripts
             - Automation
+            - Setup Scripts
