@@ -505,13 +505,26 @@
             - Migration
 
         - title: Castopod
-          link: https://github.com
+          link: https://castopod.org
           lastModified: 
-          summary: Open source project I contributed to.
+          summary: Self-host your podcasts with ease, keep control over what you create and talk to your audience without any middleman. Your podcast and your audience belong to you and you only.
           tags:
             - PHP
             - Podcast
             - CMS
+            - Open Source
+
+        - title: Doplarr
+          link: https://github.com/kiranshila/Doplarr
+          lastModified: 
+          summary: Doplarr is an open-source Discord bot written in Clojure that integrates with Radarr and Sonarr. It allows users to search, request, and manage movies and TV shows directly from Discord, making media library management with Plex or Jellyfin more convenient.
+          tags:
+            - Discord
+            - Radarr
+            - Sonarr
+            - Plex
+            - Jellyfin
+            - Clojure
             - Open Source
 
 - category: Business Intelligence
