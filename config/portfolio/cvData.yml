@@ -93,7 +93,7 @@ roles:
   - company: VistaPrint
     title: Technical Lead
     period: 2022 – 2023
-    location: Remote
+    location: Barcelona, Spain (Remote)
     icon: faCreditCard
     website: https://vistaprint.com
     summary: >
@@ -110,7 +110,7 @@ roles:
   - company: Derivco Sports
     title: Team Lead
     period: 2019 – 2022
-    location: Cape Town, SA (Remote)
+    location: Barcelona, Spain (Remote)
     icon: faChartLine
     website: https://derivco.com
     summary: >
@@ -127,7 +127,7 @@ roles:
   - company: Inventive Group
     title: Principal Engineer
     period: 2017 – 2018
-    location: Sofia, Bulgaria
+    location: Austin, TX, USA (Remote)
     icon: faHammer
     summary: >
       Delivered multiple MVP projects for new client acquisitions, built scalable cloud infrastructure,
@@ -139,6 +139,68 @@ roles:
       - Implemented development standards, code review practices, and CI processes
       - Led full-stack development using .NET and Angular technologies
     tech: C#, ASP.NET MVC, Azure, SQL Server, JavaScript, Angular
+
+  - company: Contec Holdings, LLC
+    title: Senior Architect
+    period: 2016 – 2017
+    location: Schenectady, NY, USA
+    icon: faSitemap
+    summary: >
+      Directed the development and deployment of internal business applications and infrastructure
+      using AWS and Azure. Led an Agile team delivering high-quality, testable applications while
+      modernizing source control, deployment, and analytics systems.
+    achievements:
+      - Implemented modern, testable applications with ASP.NET WebAPI and Angular
+      - Mentored team members on ASP.NET MVC, WebAPI, and Angular best practices
+      - Modernized deployments by migrating to Git/GitHub, TeamCity, and Octopus Deploy
+      - Introduced PowerBI analytics leading to key business insights
+      - Built and maintained hybrid cloud infrastructure on AWS and Azure
+    tech: .NET, .NET Core, Angular, ASP.NET MVC, ASP.NET WebAPI, AWS, Azure, Bootstrap, C#, SQL Server, MySQL, PowerShell, TypeScript, Dapper, NodeJS, TeamCity, Octopus Deploy
+
+  - company: MXToolbox, Inc.
+    title: Technical Architect
+    period: 2014 – 2016
+    location: Austin, TX, USA
+    icon: faServer
+    summary: >
+      Led architecture and development of the company’s flagship monitoring platform, establishing
+      modern CI/CD pipelines and mentoring development teams on best practices across the stack.
+    achievements:
+      - Led design, development, and testing of MXToolbox.com and related products
+      - Mentored development team and established coding standards
+      - Implemented CI/CD pipelines with GitHub, Jenkins, TeamCity, and Octopus Deploy
+      - Defined technical direction and specifications for new product development
+    tech: .NET, Angular, ASP.NET MVC, ASP.NET WebAPI, AWS, C#, SQL Server, JavaScript, Dapper, TeamCity, Jenkins, PowerShell
+
+  - company: Revionics, Inc.
+    title: Software Architect
+    period: 2013 – 2014
+    location: Austin, TX, USA
+    icon: faCode
+    summary: >
+      Served as part of a SCRUM team developing Revionics’ Markdown optimization product and
+      mission-critical applications, ensuring robust data infrastructure and scalable architecture.
+    achievements:
+      - Designed and developed core modules for Revionics’ Markdown optimization platform
+      - Prototyped new business applications leveraging Microsoft SQL Server and VoltDB
+      - Collaborated on database and backend optimization for performance and reliability
+    tech: .NET, Angular, ASP.NET MVC, ASP.NET WebAPI, C#, SQL Server, VoltDB, JavaScript, Bootstrap, Gulp, NUnit
+
+  - company: Symphony Video, Inc.
+    title: Director of Software Engineering
+    period: 2007 – 2013
+    location: Syracuse, NY, USA
+    icon: faVideo
+    summary: >
+      Directed software design and development for the company’s flagship video management platform.
+      Led client engagement, architecture, and delivery, implementing continuous integration to improve
+      quality and deployment speed.
+    achievements:
+      - Architected and managed full software development lifecycle for flagship platform
+      - Oversaw development team and client requirements definition
+      - Reduced installation time by packaging automated installers and updaters
+      - Implemented CI/CD pipelines with Git/GitHub and TeamCity
+    tech: .NET, ASP.NET MVC, ASP.NET WebAPI, C#, SQL Server, JavaScript, jQuery, Dapper, NUnit, TeamCity, SOAP, WCF
 
 educationTitle: '🎓 Education & Learning'
 education:
