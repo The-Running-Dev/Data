@@ -297,7 +297,7 @@ stats:
     label: Leadership Roles
 
   - number: 4
-    label: Countries (USA, Spain, Bulgaria, Remote Global)
+    label: Countries (Remote/Global)
 
   - number: Open Source
     label: Contributor
