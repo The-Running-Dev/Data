@@ -1,7 +1,7 @@
 header:
-  title: Founder & Principal Architect | Entrepreneurial Software Builder
+  title: Software Architect | Solution Architecture | Technical Leadership | OSS
   email: contact.mbowp@aleeas.com
-  phone: "Available Remote / International"
+  phone: Available Remote / International
   links:
     - label: GitHub
       href: https://github.com/The-Running-Dev
@@ -47,200 +47,213 @@ badges:
 chips:
   - Founder
   - Principal Architect
+  - Technical Lead
   - DevOps Automator
   - Open-Source Contributor
   - Package Maintainer
   - Technical Mentor
   - Full-Stack Developer
 
-timelineTitle: '💼 Professional Experience'
-
+timelineTitle: 💼 Professional Experience
 roles:
   - company: SubZeroDev
-    title: Founder & Principal Architect
-    period: 2023 – Present
+    title: CEO & Founder
+    period: 2023 - Present
     location: Remote / International
     icon: faRocket
     website: https://subzerodev.com
-    summary: >
-      Founded a boutique consultancy delivering cloud-native platforms, DevOps automation,
-      and workflow modernization. Actively building open-source projects including Docker-Webhooks,
-      Docker-Watchdog, Docker-BuildAgent, and contributing to Microsoft's WinGet ecosystem.
+    summary: >-
+      Founder and principal software architect delivering end-to-end system design, implementation, and automation as a solo
+      consultant for small businesses; focused on high-quality, maintainable, and salable solutions.
     achievements:
-      - Built Docker-Webhooks for automated container management via GitHub workflows
-      - Created Docker-Watchdog for robust Docker Compose environment monitoring
-      - Developed Docker-BuildAgent for CI/CD pipelines with pre-configured tools
-      - Contributed multiple packages to Microsoft WinGet ecosystem
-      - Built comprehensive Azure DevOps pipeline templates and IaC modules
-      - Created Docusaurus Template for professional documentation sites
-    tech: C#, .NET Core, Docker, Azure, AWS, React, Node.js, DevOps, TypeScript
+      - Owned technical delivery end-to-end: architecture, implementation, deployment, and long-term maintainability
+      - Designed, developed, and maintained web applications using Node.js, Docker, and .NET WebAPI
+      - Implemented DevOps automation using GitHub Workflows, PowerShell, Bash, and Docker
+      - Assisted clients in optimizing and modernizing digital workflows; delivered cloud and microservices architectures
+      - 'Open-source contributions: Microsoft winget-pkgs (91 merged PRs), Chocolatey community packages (~12), Doplarr PR,
+        Docker-Webhooks, Castopod ops support, ImageEventProcessor demo, Thum.io client/CLI'
+    tech: .NET, C#, Node.js, WebAPI, Angular, AWS, PowerShell, Bash, TypeScript, Microservices, Docker, SQL Server, MySQL,
+      GitHub Workflows
 
   - company: BlueLionHeart
     title: Co-Founder & Lead Engineer
-    period: 2023-2024
+    period: 2023 - 2024
     location: Remote
-    icon: faLightbulb
-    summary: >
-      Co-founded and developed an IoT-powered predictive analytics platform for municipal 
-      infrastructure monitoring, focusing on proactive maintenance and automated alerting systems.
+    icon: faWater
+    website: ''
+    summary: >-
+      Co-founded BlueLionheart: a real-time sewer-level monitoring and overflow prediction platform using sensor ingestion,
+      predictive analytics, and cloud processing to prevent overflows and improve municipal resilience.
     achievements:
-      - Architected scalable IoT platform for real-time sensor data processing
-      - Implemented machine learning models for predictive maintenance analytics
-      - Built automated notification systems for municipal infrastructure monitoring
-      - Developed time-series data processing pipelines for municipal clients
-    tech: Python, TensorFlow, IoT, Azure IoT Hub, Time Series Analytics
-  
+      - 'Owned end-to-end technical direction: sensor ingestion, cloud processing, and alerting strategy'
+      - Engineered real-time monitoring to track sewer levels and forecast overflows using AWS, WebAPI, and analytics
+      - Designed predictive maintenance algorithms to reduce risk and improve urban water management efficiency
+      - Built automated alerting to notify infrastructure teams before issues escalated
+      - Developed scalable microservices architecture for high-volume sensor data processing
+    tech: AWS Lambda, .NET, WebAPI, ASP.NET MVC, IoT Sensors, Analytics, PowerShell, Docker, SQL Server,
+      Microservices
+
   - company: VistaPrint
     title: Technical Lead
     period: 2022 – 2023
-    location: Barcelona, Spain (Remote)
+    location: Barcelona, Spain
     icon: faCreditCard
-    website: https://vistaprint.com
-    summary: >
-      Led the payments engineering team, architecting new payment methods and mentoring developers
-      to improve code quality, delivery velocity, and system reliability.
+    website: https://www.vistaprint.com
+    summary: >-
+      Led and coached an agile team in the payments space; owned architectural decisions while developing and maintaining
+      critical payment systems.
     achievements:
-      - Led cross-functional payments infrastructure team
-      - Architected and implemented new payment method integrations
-      - Improved payment processing reliability and error handling
-      - Mentored junior developers in clean code and microservices architecture
-      - Established testing strategies and CI/CD practices for payment systems
-    tech: C#, .NET, Payment APIs, Microservices, Kafka, Redis
-  
+      - Architected and implemented new payment methods and processes across React frontend and .NET backend
+      - Managed delivery via planning, retrospectives, and code reviews; coached developers and maintained team standards
+      - Acted as architectural escalation point for payment systems; aligned frontend and backend teams on integrations and
+        delivery standards
+    tech: .NET, WebAPI, React, AWS, PowerShell, Bash, C#, JavaScript, Microservices, SQL Server, MySQL, Dapper
+
   - company: Derivco Sports
-    title: Team Lead
+    title: Team Lead / Technical Lead
     period: 2019 – 2022
-    location: Barcelona, Spain (Remote)
+    location: Barcelona, Spain
     icon: faChartLine
     website: https://derivco.com
-    summary: >
-      Introduced modern development practices including Azure DevOps pipelines, agile methodologies,
-      and test-driven development across the trading systems division.
+    summary: >-
+      Team lead in the Trading Division; balanced management with delivery on highly technical projects while supporting
+      multiple teams with standards and shared platforms.
     achievements:
-      - Implemented CI/CD pipelines reducing manual deployment processes
-      - Established TDD practices and automated testing strategies
-      - Led agile transformation across multiple development teams
-      - Architected real-time trading platform with SignalR and high-frequency data processing
-      - Mentored teams on clean code practices and SOLID principles
-    tech: C#, .NET Framework, Azure DevOps, SQL Server, SignalR
-  
+      - Took ownership of existing processes; architected new projects and improved engineering practices
+      - Coached developers on best practices and helped implement TDD and Agile/SCRUM
+      - Defined and rolled out standardized CI/CD architecture using Azure YAML pipelines across 8 teams (~60 engineers),
+        reducing delivery variance and improving release reliability
+    tech: .NET Core, ASP.NET (WebAPI/Razor Pages/MVC), Azure (ARM, Functions, ServiceBus, App Service), YAML, PowerShell,
+      Bash, C#, JavaScript, Microservices, SQL Server, Dapper
+
   - company: Inventive Group
     title: Principal Engineer
     period: 2017 – 2018
-    location: Austin, TX, USA (Remote)
-    icon: faHammer
-    summary: >
-      Delivered multiple MVP projects for new client acquisitions, built scalable cloud infrastructure,
-      and grew the engineering team while establishing development processes.
+    location: Austin, TX, USA
+    icon: faLightbulb
+    website: ''
+    summary: >-
+      Provided technical and analytical leadership delivering interactive, user-centric applications and cloud infrastructure;
+      guided a small team using modern engineering practices.
     achievements:
-      - Delivered multiple MVPs that successfully secured new client partnerships
-      - Architected and built scalable cloud infrastructure on Azure
-      - Grew engineering team and established mentoring processes
-      - Implemented development standards, code review practices, and CI processes
-      - Led full-stack development using .NET and Angular technologies
-    tech: C#, ASP.NET MVC, Azure, SQL Server, JavaScript, Angular
+      - Helped bring in new business and grew the project team to 5 developers
+      - Delivered an MVP that led to new customers and a new line of business
+      - Implemented CI/CD with AWS, Bash, BitBucket, Docker, Octopus Deploy, and TeamCity to reduce time and cost
+      - Built and maintained full-stack solutions using a broad set of languages and frameworks
+    tech: .NET, .NET Core, Angular, AWS, Azure, Bash, Docker, Octopus Deploy, TeamCity, Node.js, TypeScript, MySQL,
+      Microservices
 
   - company: Contec Holdings, LLC
     title: Senior Architect
     period: 2016 – 2017
     location: Schenectady, NY, USA
-    icon: faSitemap
-    summary: >
-      Directed the development and deployment of internal business applications and infrastructure
-      using AWS and Azure. Led an Agile team delivering high-quality, testable applications while
-      modernizing source control, deployment, and analytics systems.
+    icon: faBuilding
+    website: ''
+    summary: >-
+      Directed development and deployment of internal line-of-business applications and cloud infrastructure on AWS; set
+      technical direction and standards for an agile team delivering tested, high-quality products.
     achievements:
-      - Implemented modern, testable applications with ASP.NET WebAPI and Angular
-      - Mentored team members on ASP.NET MVC, WebAPI, and Angular best practices
-      - Modernized deployments by migrating to Git/GitHub, TeamCity, and Octopus Deploy
-      - Introduced PowerBI analytics leading to key business insights
-      - Built and maintained hybrid cloud infrastructure on AWS and Azure
-    tech: .NET, .NET Core, Angular, ASP.NET MVC, ASP.NET WebAPI, AWS, Azure, Bootstrap, C#, SQL Server, MySQL, PowerShell, TypeScript, Dapper, NodeJS, TeamCity, Octopus Deploy
+      - Set architectural direction and technical standards adopted by multiple teams
+      - Defined reference architectures and deployment patterns for internal systems
+      - Delivered modern, testable applications using ASP.NET WebAPI and Angular; mentored the team
+      - Modernized source control by migrating to Git/GitHub and implemented TeamCity + Octopus Deploy
+      - Prototyped business analytics with Microsoft PowerBI to surface insights and improve processes
+    tech: .NET, .NET Core, ASP.NET WebAPI/MVC, Angular, AWS (EC2/RDS/S3), Azure, SQL Server, MySQL, PowerShell, TeamCity,
+      Octopus Deploy, Git/GitHub
 
   - company: MXToolbox, Inc.
     title: Technical Architect
     period: 2014 – 2016
     location: Austin, TX, USA
-    icon: faServer
-    summary: >
-      Led architecture and development of the company’s flagship monitoring platform, establishing
-      modern CI/CD pipelines and mentoring development teams on best practices across the stack.
+    icon: faTools
+    website: https://mxtoolbox.com
+    summary: >-
+      Led R&D and development of new products while maintaining MXToolbox.com; created technical specifications and delivered
+      within a SCRUM team.
     achievements:
-      - Led design, development, and testing of MXToolbox.com and related products
-      - Mentored development team and established coding standards
-      - Implemented CI/CD pipelines with GitHub, Jenkins, TeamCity, and Octopus Deploy
-      - Defined technical direction and specifications for new product development
-    tech: .NET, Angular, ASP.NET MVC, ASP.NET WebAPI, AWS, C#, SQL Server, JavaScript, Dapper, TeamCity, Jenkins, PowerShell
+      - Oversaw design, development, and testing of the company’s flagship product
+      - Mentored and supported the development team
+      - Implemented source control and continuous deployment with Git/GitHub, Jenkins, TeamCity, Octopus Deploy, and
+        PowerShell
+    tech: .NET, Angular, ASP.NET WebAPI/MVC, AWS, SQL Server, Jenkins, TeamCity, Octopus Deploy, PowerShell, JavaScript,
+      Dapper
 
   - company: Revionics, Inc.
     title: Software Architect
     period: 2013 – 2014
     location: Austin, TX, USA
-    icon: faCode
-    summary: >
-      Served as part of a SCRUM team developing Revionics’ Markdown optimization product and
-      mission-critical applications, ensuring robust data infrastructure and scalable architecture.
+    icon: faTag
+    website: ''
+    summary: >-
+      Architect and contributor in a SCRUM team; helped build mission-critical applications and a Markdown product while
+      maintaining database and infrastructure layers.
     achievements:
-      - Designed and developed core modules for Revionics’ Markdown optimization platform
-      - Prototyped new business applications leveraging Microsoft SQL Server and VoltDB
-      - Collaborated on database and backend optimization for performance and reliability
-    tech: .NET, Angular, ASP.NET MVC, ASP.NET WebAPI, C#, SQL Server, VoltDB, JavaScript, Bootstrap, Gulp, NUnit
+      - Prototyped new business applications on top of Microsoft SQL Server and VoltDB
+    tech: .NET, Angular, ADO.NET, ASP.NET WebAPI/MVC, SQL Server, VoltDB, JavaScript, NUnit/Moq
 
   - company: Symphony Video, Inc.
     title: Director of Software Engineering
     period: 2007 – 2013
     location: Syracuse, NY, USA
     icon: faVideo
-    summary: >
-      Directed software design and development for the company’s flagship video management platform.
-      Led client engagement, architecture, and delivery, implementing continuous integration to improve
-      quality and deployment speed.
+    website: ''
+    summary: >-
+      Directed technical design and development of the company’s flagship product; worked directly with clients to define
+      requirements and implementation strategies.
     achievements:
-      - Architected and managed full software development lifecycle for flagship platform
-      - Oversaw development team and client requirements definition
-      - Reduced installation time by packaging automated installers and updaters
-      - Implemented CI/CD pipelines with Git/GitHub and TeamCity
-    tech: .NET, ASP.NET MVC, ASP.NET WebAPI, C#, SQL Server, JavaScript, jQuery, Dapper, NUnit, TeamCity, SOAP, WCF
+      - Architected and managed software development projects and the development team
+      - Reduced support and installation time by creating installation and upgrade packages
+      - Implemented CI/CD infrastructure using Git/GitHub and TeamCity to improve quality and delivery
+    tech: .NET, ASP.NET WebAPI/MVC, SQL Server, Dapper, JavaScript, jQuery, SOAP, WCF, NUnit, TeamCity
 
-educationTitle: '🎓 Education & Learning'
+educationTitle: 🎓 Education & Professional Development
 education:
   - school: Alfred University (NY, USA)
     degree: B.S. Computer Science (Cum Laude), Minor in MIS
-    details: Formal foundation in software engineering and information systems
+    details: B.S. Computer Science (Cum Laude) with Minor in Management Information Systems
   - school: Continuous Learning
-    degree: Self-directed education in Clean Code, DevOps, and Modern Software Practices
-    details: Pluralsight, .NET Code Camps, Open-source contributions
+    degree: .NET Code Camps | Pluralsight | Books
+    details: Code Complete; The Clean Coder; Clean Code; NG-Book; Design Patterns
 
-projectsTitle: '🚀 Recent Projects & Open Source'
+projectsTitle: 🚀 Recent Projects & Open Source
 projects:
-  - title: Docker-Watchdog
-    link: https://github.com/The-Running-Dev/Docker-Watchdog
-    description: Robust containerized management tool for Docker Compose environments with automated updates and health monitoring
-    tech: Docker, Node.js, TypeScript, REST API
-    year: 2025
-  
   - title: AzureDevOps-Templates
     link: https://github.com/The-Running-Dev/Demo-AzureDevOps-Templates
     description: Comprehensive collection of reusable Azure DevOps pipeline templates and infrastructure-as-code modules
     tech: Azure DevOps, ARM Templates, YAML, IaC
     year: 2025
-  
-  - title: Docker-Webhooks
-    link: https://github.com/The-Running-Dev/Docker-Webhooks
-    description: Node.js API for managing local Docker containers via GitHub workflow webhooks through Cloudflared
-    tech: Node.js, Express, Docker, TypeScript, Webhooks
+
+  - title: BarStrad Restaurant System
+    link: https://github.com/The-Running-Dev/BarStrad-UI
+    description: Angular-based restaurant menu application with Discord integration and multilingual support
+    tech: Angular, TypeScript, Discord, i18n
     year: 2025
   
   - title: Docker-BuildAgent
     link: https://github.com/The-Running-Dev/Docker-BuildAgent
-    description: Pre-configured Docker image for CI/CD pipelines with Node.js, Angular CLI, TypeScript, and PowerShell
-    tech: Docker, Node.js, Angular, PowerShell, CI/CD
+    description: >-
+      Dockerized build environment embedding Nuke build pipelines and common toolchains for reusable CI/CD workflows.
+    tech: Docker, Nuke, GitHub Actions, CI/CD, PowerShell, Angular, Node.js
     year: 2025
   
   - title: Docker-DNSAtHome
     link: https://github.com/The-Running-Dev/Docker-DNSAtHome
     description: Containerized dnscrypt-proxy solution with encrypted DNS, blocklists, and automated monitoring
     tech: Docker, DNS, dnscrypt-proxy, Security, Privacy
+    year: 2025
+  
+  - title: Docker-Webhooks
+    link: https://github.com/The-Running-Dev/Docker-Webhooks
+    description: >-
+      Self-hosted webhook service enabling GitHub-triggered container updates and automation for local Docker stacks.
+    tech: Node.js, Express, Docker, TypeScript, Webhooks, GitHub Actions
+    year: 2025
+
+  - title: Docker-Watchdog
+    link: https://github.com/The-Running-Dev/Docker-Watchdog
+    description: >-
+      Container monitoring + health check orchestration with restart / rollback patterns and notifications.
+    tech: Docker, Node.js, TypeScript, Monitoring, Automation, REST API
     year: 2025
   
   - title: Docusaurus Template
@@ -255,37 +268,52 @@ projects:
     tech: PowerShell, File Management, Automation
     year: 2023
 
-  - title: QuickSync
-    link: https://github.com/The-Running-Dev/QuickSync
-    description: Windows desktop utility for comparing and synchronizing folders using CRC32 checksums
-    tech: .NET, C#, WinForms, File Management
-    year: 2025
-
   - title: Image Event Processor
     link: https://github.com/The-Running-Dev/Demo-ImageEventProcessor
     description: .NET WebAPI hosted on AWS Lambda with Angular UI for processing images
     tech: .NET, AWS Lambda, Angular, Serverless
     year: 2025
 
-  - title: BarStrad Restaurant System
-    link: https://github.com/The-Running-Dev/BarStrad-UI
-    description: Angular-based restaurant menu application with Discord integration and multilingual support
-    tech: Angular, TypeScript, Discord, i18n
+  - title: QuickSync
+    link: https://github.com/The-Running-Dev/QuickSync
+    description: Windows desktop utility for comparing and synchronizing folders using CRC32 checksums
+    tech: .NET, C#, WinForms, File Management
+    year: 2025
+    
+  - title: Thum.io Client & CLI
+    link: https://github.com/The-Running-Dev/Thum.io
+    description: API package and CLI for interacting with the Thum.io screenshot service.
+    impact: Streamlines automation around screenshot generation.
+    tech: CLI, API Client, Automation
     year: 2025
 
-openSourceTitle: '🌟 Open Source Contributions'
+openSourceTitle: 🌟 Open Source Contributions
 openSource:
   - title: Microsoft WinGet Packages
     link: https://github.com/microsoft/winget-pkgs/pulls?q=is%3Apr+author%3AThe-Running-Dev
-    description: Multiple contributions to Windows Package Manager community repository
-    impact: Package management for Windows ecosystem
-    tech: Package Management, YAML, Windows
+    description: >-
+      Community contributor and maintainer; 91 merged pull requests (package manifests and version updates), CI-validated and
+      moderator-reviewed.
+    impact: Improves Windows package distribution and update cadence.
+    tech: Package Management, YAML, CI/CD, Windows
 
   - title: Chocolatey Community Packages
     link: https://github.com/chocolatey-community/chocolatey-packages/pulls?q=is%3Apr+author%3AThe-Running-Dev
-    description: Contributed packages for popular software including Spotify, JetBrains tools
-    impact: Simplified software installation for Windows users
+    description: Contributed ~12 packages for widely used developer and productivity tools.
+    impact: Simplifies Windows software installation for end users and teams.
     tech: Package Management, PowerShell, Chocolatey
+
+  - title: Doplarr
+    link: https://github.com/kiranshila/Doplarr
+    description: Pull request contribution to a Discord bot integrating Radarr and Sonarr.
+    impact: Improves community tooling for media automation workflows.
+    tech: Docker, Discord, Servarr Ecosystem
+
+  - title: Castopod
+    link: https://github.com/ad-aures/castopod-docker
+    description: Community support focused on Docker deployment and operational troubleshooting (non-code).
+    impact: Improves deployment success and reliability for users self-hosting Castopod.
+    tech: Docker, Ops, Troubleshooting
 
   - title: GitHub Actions Automation
     description: Automated WinGet package updates for SideQuest Easy Installer and XYplorer
@@ -298,38 +326,41 @@ openSource:
     impact: Database deployment automation
     tech: SQL Server, Database Migration, .NET
 
-timelineProjectsTitle: '📈 Career Timeline & Key Projects'
+timelineProjectsTitle: 📈 Career Timeline & Key Projects
 timelineProjects:
-  - period: "2023-Present (SubZeroDev Era)"
-    focus: "Containerization & DevOps Automation"
+  - period: 2023 - Present (SubZeroDev Era)
+    focus: Consulting, Delivery, Automation
     projects:
-      - "Docker-Watchdog (Container Management)"
-      - "Docker-Webhooks (CI/CD Integration)"
-      - "Docker-BuildAgent (Pipeline Tools)"
-      - "AzureDevOps Templates (IaC)"
-      - "Docusaurus Template (Documentation)"
+      - Docker-BuildAgent (CI/CD Management)
+      - Docker-Watchdog (Container Management)
+      - Docker-Webhooks (CI/CD Integration)
+      - AzureDevOps Templates (IaC)
+      - Docusaurus Template (Documentation)
 
-  - period: "2019-2022 (Derivco Sports Era)"  
-    focus: "Enterprise Development & Trading Systems"
+  - period: 2019 – 2022 (Derivco Sports Era)
+    focus: Enterprise Development, Trading Systems, Division Standards & CI/CD at Scale
     projects:
-      - "Business Intelligence Web Interface"
-      - "Manual Testing Applications (Angular)"
-      - "Equipment Repairs System"
-      - "Code Generation Tools (Razor Templates)"
+    - Azure YAML pipeline standardization across 8 teams (~60 engineers)
+    - Shared delivery patterns and architecture guardrails
+    - Coaching and engineering practice uplift (TDD, Agile/SCRUM)
 
-  - period: "2017-2018 (Inventive Group Era)"
-    focus: "Full-Stack Development & MVPs"
+  - period: 2017 - 2018 (Inventive Group Era)
+    focus: Full-Stack Development & MVPs
     projects:
-      - "Patient Viewer (.NET & Angular demos)"
-      - "Menu Creator (ASP.NET Core)"
-      - "NetAssure Platform (Angular/Node.js/Docker)"
-      - "Shopping Service Microservice"
+      - Patient Viewer (.NET & Angular demos)
+      - Menu Creator (ASP.NET Core)
+      - NetAssure Platform (Angular/Node.js/Docker)
+      - Shopping Service Microservice (.NET Core/AWS)
 
-  - period: "2014-2016 (Early Career)"
-    focus: "Automation & Build Tools"
+  - period: 2014 - 2016 (Early Career)
+    focus: Automation & Build Tools
     projects:
-      - "OctopusDeploy Integration Tools"
-      - "PowerShell Automation Scripts"
-      - "BoxStarter Package Management"
+      - Business Intelligence Web Interface
+      - Manual Testing Applications (Angular)
+      - Equipment Repairs System
+      - Code Generation Tools (Razor Templates)
+      - OctopusDeploy Integration Tools
+      - PowerShell Automation Scripts
+      - BoxStarter Package Management
 
-quote: I build systems that scale, teams that grow, and solutions that last. Software should be practical, elegant, and impactful.
+quote: People don’t fear your darkness; they fear the mirror.
