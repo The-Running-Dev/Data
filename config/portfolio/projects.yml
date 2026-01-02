@@ -438,60 +438,99 @@
   subCategories:
     - name: Open Source
       projects:
-        - title: Chocolatey Packages
-          link: https://github.com/chocolatey-community/chocolatey-packages/pulls?q=is%3Apr+author%3AThe-Running-Dev
-          lastModified: 
-          summary: 'The core repository for Chocolatey packages. I contributed a dozen packages to this repository (like Spotify, JetBrains WebStorm and DataGrip, etc.).'
-          tags:
-            - Chocolatey
-            - Windows
-            - Package Management
-            - Packages
-            - Open Source
-
         - title: WinGet-Packages
           link: https://github.com/microsoft/winget-pkgs/pulls?q=is%3Apr+author%3AThe-Running-Dev
           lastModified: 
-          summary: Contributions to the Windows package manager community repository. This repository contains the manifest files for the Windows Package Manager default source.
+          summary: Contributions to the Windows Package Manager community repository, including 91 merged pull requests for package manifests and version updates under CI and moderator review.
           tags:
             - WinGet
             - Windows
             - Package Management
-            - Packages
+            - Open Source
+  
+        - title: WinGet-Create
+          link: https://github.com/microsoft/winget-create/pulls?q=is%3Apr+author%3AThe-Running-Dev
+          lastModified:
+          summary: |
+            Contributions to Microsoft's WinGet-Create tool, which automates and validates the creation of Windows Package Manager manifests.
+            Work includes pull requests improving package creation workflows and tooling used by the WinGet community.
+          tags:
+            - WinGet
+            - Windows
+            - Package Management
+            - Tooling
+            - Automation
+            - Open Source
+        
+        - title: Chocolatey Packages
+          link: https://github.com/chocolatey-community/chocolatey-packages/pulls?q=is%3Apr+author%3AThe-Running-Dev
+          lastModified: 
+          summary: Core community repository for Chocolatey packages. Contributed approximately a dozen packages, including widely used developer and productivity tools.
+          tags:
+            - Chocolatey
+            - Windows
+            - Package Management
+            - Open Source
+
+        - title: Doplarr
+          link: https://github.com/kiranshila/Doplarr/pulls?q=is%3Apr+author%3AThe-Running-Dev
+          lastModified: 
+          summary: Doplarr is an open-source Discord bot written in Clojure that integrates with Radarr and Sonarr. Contributed via pull requests improving functionality and integration behavior.
+          tags:
+            - Discord
+            - Radarr
+            - Sonarr
+            - Plex
+            - Jellyfin
+            - Clojure
             - Open Source
 
         - title: SideQuest Easy Installer
           link: https://github.com/microsoft/winget-pkgs/pull/126347
           lastModified: 
-          summary: WinGet package for the SideQuest Easy Installer.
+          summary: Example WinGet package contribution. WinGet package for the SideQuest Easy Installer.
           tags:
             - WinGet
             - Windows
             - Package Management
-            - Packages
             - Open Source
 
         - title: XYplorer
           link: 'https://github.com/microsoft/winget-pkgs/pull/126351'
           lastModified: 
-          summary: WinGet package for the XYPlorer file manager.
+          summary: Example WinGet package contribution. WinGet package for the XYPlorer file manager.
           tags:
             - WinGet
             - Windows
             - Package Management
-            - Packages
             - Open Source
 
         - title: XYplorer Portable
           link: https://github.com/microsoft/winget-pkgs/pull/126622
           lastModified: 
-          summary: WinGet package for the XYPlorer file manager, portable version.
+          summary: Example WinGet package contribution. WinGet package for the XYPlorer file manager, portable version.
           tags:
             - WinGet
             - Windows
             - Package Management
-            - Packages
             - Open Source
+
+        - title: Castopod
+          link: https://castopod.org
+          lastModified: 
+          summary: |
+            Self-host your podcasts with ease, keep control over what you create and talk to your audience without any middleman. Your podcast and your audience belong to you and you only.
+
+            Community support contributions focused on Docker deployment and operational setup (via Castopod Discord).
+          tags:
+            - PHP
+            - Podcast
+            - CMS
+            - Open Source
+            - Docker
+            - Self-Hosting
+            - Community Support
+            - Operations
 
         - title: AliaSQL
           link: https://github.com/The-Running-Dev/Database-AliaSQL
@@ -503,29 +542,6 @@
             - Versioning
             - Open Source
             - Migration
-
-        - title: Castopod
-          link: https://castopod.org
-          lastModified: 
-          summary: Self-host your podcasts with ease, keep control over what you create and talk to your audience without any middleman. Your podcast and your audience belong to you and you only.
-          tags:
-            - PHP
-            - Podcast
-            - CMS
-            - Open Source
-
-        - title: Doplarr
-          link: https://github.com/kiranshila/Doplarr
-          lastModified: 
-          summary: Doplarr is an open-source Discord bot written in Clojure that integrates with Radarr and Sonarr. It allows users to search, request, and manage movies and TV shows directly from Discord, making media library management with Plex or Jellyfin more convenient.
-          tags:
-            - Discord
-            - Radarr
-            - Sonarr
-            - Plex
-            - Jellyfin
-            - Clojure
-            - Open Source
 
 - category: Business Intelligence
   subCategories:
