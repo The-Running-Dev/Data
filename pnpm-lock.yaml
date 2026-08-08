@@ -11,9 +11,9 @@ importers:
       glob:
         specifier: ^11.0.3
         version: 11.0.3
-      js-yaml:
-        specifier: ^4.1.0
-        version: 4.1.0
+      subzerodev-data-json:
+        specifier: 0.1.0
+        version: 0.1.0
       tsx:
         specifier: ^4.20.4
         version: 4.20.4
@@ -260,8 +260,8 @@ packages:
     resolution: {integrity: sha512-zptv57P3GpL+O0I7VdMJNBZCu+BPHVQUk55Ft8/QCJjTVxrnJHuVuX/0Bl2A6/+2oyR/ZMEuFKwmzqqZ/U5nPQ==}
     engines: {node: 20 || >=22}
 
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+  js-yaml@4.3.1:
+    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
   lru-cache@11.1.0:
@@ -317,6 +317,19 @@ packages:
   strip-ansi@7.1.0:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
     engines: {node: '>=12'}
+
+  subzerodev-data-json@0.1.0:
+    resolution: {integrity: sha512-RQE57uzG4MXixPr0yQ85nQaoQcdyUTmZGbmIleWPZXAs1Z8GLnI6p3O3tkYemaGdX//knaazKDuRyCUw6Z/1Ww==}
+    engines: {node: '>=20.19.0'}
+    hasBin: true
+    peerDependencies:
+      react: ^18.3.0
+      zod: ^4.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      zod:
+        optional: true
 
   tsx@4.20.4:
     resolution: {integrity: sha512-yyxBKfORQ7LuRt/BQKBXrpcq59ZvSW0XxwfjAt3w2/8PmdxaFzijtMhTawprSHhpzeM5BgU2hXHG3lklIERZXg==}
@@ -519,7 +532,7 @@ snapshots:
     dependencies:
       '@isaacs/cliui': 8.0.2
 
-  js-yaml@4.1.0:
+  js-yaml@4.3.1:
     dependencies:
       argparse: 2.0.1
 
@@ -569,6 +582,10 @@ snapshots:
   strip-ansi@7.1.0:
     dependencies:
       ansi-regex: 6.2.0
+
+  subzerodev-data-json@0.1.0:
+    dependencies:
+      js-yaml: 4.3.1
 
   tsx@4.20.4:
     dependencies:
